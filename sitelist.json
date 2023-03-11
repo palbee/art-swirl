@@ -1,17 +1,26 @@
-[
-  {
-    "name":"BespokeBytes",
-    "address":"https://bespokebytes.com/",
-    "owner":"dr a"
-  },
-  {
-    "name":"Emily Velasco's project page",
-    "address":"https://mle-online.com/projects/",
-    "owner":"Emily Velasco"
-  },
-  {
-    "name":"libi rose (striegl) - art, &tc.",
-    "address":"https://libirose.com/",
-    "owner":"libi rose"
-  }
-]
+{
+  "ringname": "Art Swirl",
+  "ringhome": "https://github.com/palbee/art-swirl",
+  "sitelist": [
+    {
+      "name": "BespokeBytes",
+      "address": "https://bespokebytes.com/",
+      "owner": "dr&nbsp;a"
+    },
+    {
+      "name": "Emily Velasco's project page",
+      "address": "https://mle-online.com/projects/",
+      "owner": "Emily&nbsp;Velasco"
+    },
+    {
+      "name": "libi rose (striegl) - art, &tc.",
+      "address": "https://libirose.com/",
+      "owner": "libi&nbsp;rose"
+    },
+    {
+      "name": "Ramblings of an Elder Nerd",
+      "address": "https://duksta.org/",
+      "owner": "ducksauz"
+    }
+  ]
+}
