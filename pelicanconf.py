@@ -4,8 +4,8 @@ SITENAME = 'All Knowing Trash Heap'
 SITEURL = ''
 STATIC_PATHS = ['images', 'extra/CNAME', 'webring']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
-                       # 'webring/swirl.css': {'path': 'webring/swirl.css'},
                        }
+# THEME = 'elegant'
 PATH = 'content'
 
 TIMEZONE = 'America/Los_Angeles'
@@ -20,8 +20,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
+LINKS = (('The web ring CSS file', '/webring/swirl.css'),
+         ('The web ring Javascript file', '/webring/webring.js'),
          ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
          ('You can modify those links in your config file', '#'),)
 
