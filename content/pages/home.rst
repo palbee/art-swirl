@@ -1,12 +1,14 @@
 Home
 ####
-:authors: Dr A;
+:authors: dr_a;
 :summary: The start of the webring.
 :status: published
 :slug: home
 :save_as: index.html
 
-The All Knowing Trash Heap welcomes you.
+The All Knowing Trash Heap Welcomes you.
+
+To be added to the web ring, contact `dr_a <https://mastodon.social/@dr_a>`_.
 
 .. raw:: html
 
