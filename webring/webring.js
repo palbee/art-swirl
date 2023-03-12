@@ -14,7 +14,7 @@ template.innerHTML = `
 
   text-align: center;
 
-  font: 100% system-ui, sans-serif;
+  font: 60% system-ui, sans-serif;
 }
 .icon {
   font-size: 64px;
