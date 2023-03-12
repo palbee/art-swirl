@@ -56,7 +56,8 @@ class Webring extends HTMLElement {
         fetch(siteList)
             .then((response) => response.json())
             .then((site_data) => {
-                console.log(site_data);
+                const nSites = site_data.sitelist.length;
+
                 // Find the current site in the data
                 const matchedSiteIndex = site_data.sitelist.findIndex(
                     (site) => site.address === thisSite
@@ -68,14 +69,9 @@ class Webring extends HTMLElement {
 
                 if (matchedSiteIndex !== -1) {
                     const matchedSite = site_data.sitelist[matchedSiteIndex];
-
-                    let prevSiteIndex = matchedSiteIndex - 1;
-                    if (prevSiteIndex === -1) prevSiteIndex = site_data.sitelist.length - 1;
-
-                    let nextSiteIndex = matchedSiteIndex + 1;
-                    if (nextSiteIndex > site_data.sitelist.length) nextSiteIndex = 0;
-
-                    const randomSiteIndex = this.getRandomInt(0, site_data.sitelist.length - 1);
+                    const prevSiteIndex = (matchedSiteIndex - 1 + nSites) % nSites;
+                    const nextSiteIndex = (matchedSiteIndex + 1) % nSites;
+                    const randomSiteIndex = this.getRandomInt(0, nSites - 1);
 
                     cp = `<h1>${site_data.ringname} Webring</h1><p> <a href="${matchedSite.address}">
                             ${matchedSite.name}</a> site is by ${matchedSite.owner}</p>
