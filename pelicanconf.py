@@ -22,12 +22,10 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (('The web ring CSS file', '/webring/swirl.css'),
          ('The web ring Javascript file', '/webring/webring.js'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         ('You can modify those links in your config file', '#'),)
+         )
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('<a rel="me" href="https://mastodon.social/@dr_a">dr_a@mastodon.social</a>', '#'),)
 
 DEFAULT_PAGINATION = 10
 
