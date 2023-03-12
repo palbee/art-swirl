@@ -2,8 +2,10 @@
 AUTHOR = 'dr_a'
 SITENAME = 'All Knowing Trash Heap'
 SITEURL = ''
-STATIC_PATHS = ['images', 'extra/CNAME']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}}
+STATIC_PATHS = ['images', 'extra/CNAME', 'webring']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
+                       # 'webring/swirl.css': {'path': 'webring/swirl.css'},
+                       }
 PATH = 'content'
 
 TIMEZONE = 'America/Los_Angeles'
