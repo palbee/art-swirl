@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html name="demo" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Example Webring Usage</title>
+    <meta name="example_usage">
     <link href="/webring/swirl.css" rel="stylesheet"/>
 </head>
 <body>
@@ -18,8 +19,43 @@
     &lt;/script&gt;
 </pre>
 
+<p>Webring with no theme specified</p>
+<webring-swirl site="https://ring.allknowingtrashheap.art/" ringlist="/webring/sitelist.json">
+    Make sure the
+    <pre>webring.js</pre>
+    script is loaded.
+</webring-swirl>
 
-<webring-swirl site="https://ring.allknowingtrashheap.art/" ringlist="https://ring.allknowingtrashheap.art/webring/sitelist.json">Make sure the <pre>webring.js</pre> script is loaded.</webring-swirl>
-<script type="text/javascript" src="https://ring.allknowingtrashheap.art/webring/webring.js"></script>
+<p>Webring with old-skool theme specified</p>
+<webring-swirl site="https://ring.allknowingtrashheap.art/" ringlist="/webring/sitelist.json"
+               theme="old-skool">Make sure the
+    <pre>webring.js</pre>
+    script is loaded.
+</webring-swirl>
+
+<p>Webring with low-profile theme specified</p>
+<webring-swirl site="https://ring.allknowingtrashheap.art/" ringlist="/webring/sitelist.json"
+               theme="low-profile">Make sure the
+    <pre>webring.js</pre>
+    script is loaded.
+</webring-swirl>
+
+<p>Webring with low-profile theme specified and incorrect site name</p>
+<webring-swirl site="https://ring.allknowingtrashheap.com/" ringlist="/webring/sitelist.json"
+               theme="low-profile">Make sure the
+    <pre>webring.js</pre>
+    script is loaded.
+</webring-swirl>
+
+<p>Webring with low-profile theme specified and incorrect ringlist</p>
+<webring-swirl site="https://ring.allknowingtrashheap.art/" ringlist="/webring/badsitelist.json"
+               theme="low-profile">Make sure the
+    <pre>webring.js</pre>
+    script is loaded.
+</webring-swirl>
+
+
+<script type="text/javascript" src="/webring/webring.js"></script>
+
 </body>
 </html>
