@@ -5,12 +5,14 @@ SITEURL = ''
 STATIC_PATHS = ['images', 'extra/CNAME', 'webring']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
                        }
-# THEME = 'elegant'
+THEME = 'elegant'
 PATH = 'content'
 
 TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
+
+LANDING_PAGE_TITLE = "All Knowing Trash Heap"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -31,3 +33,11 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
+
+SITESUBTITLE = """
+<webring-swirl site="https://ring.allknowingtrashheap.art/"
+     ringlist="/webring/sitelist.json" theme="low-profile">
+     Make sure the <pre>webring.js</pre> script is loaded.</webring-swirl>
+    <script type="text/javascript"
+    src="/webring/webring.js"></script>
+"""
